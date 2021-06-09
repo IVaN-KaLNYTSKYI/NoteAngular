@@ -1,0 +1,6 @@
+<form [formGroup]="myFormGroup">
+  <input type="text" name="name" [formControl]="nameControl">
+  <input type="text" name="surname" [formControl]="surnameControl" >
+  <button (click)="add()">add</button>
+</form>
+
