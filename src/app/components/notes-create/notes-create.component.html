@@ -1,6 +1,26 @@
-<form [formGroup]="myFormGroup">
-  <input type="text" name="name" [formControl]="nameControl">
-  <input type="text" name="surname" [formControl]="surnameControl" >
-  <button (click)="add()">add</button>
-</form>
-
+<div class="notes-box">
+  <div class="notes-box-form">
+    <form [formGroup]="myFormGroup">
+      <div class="notes-input">
+        <input type="text" name="name" [formControl]="textControl">
+      </div>
+      <mat-icon *ngIf="!flag"  (click)="add()">add</mat-icon>
+      <mat-icon *ngIf="flag" (click)="edit()">add_box</mat-icon>
+    </form>
+  </div>
+  <div class="notes-info-box">
+    <div class="notes-info" *ngFor="let o of note">
+      <div class="notes-text">
+        <span>{{o.text}}</span>
+      </div>
+      <div class="notes-btn">
+        <div>
+          <mat-icon class="mat-icon-delete" (click)="delete(o)">remove_circle</mat-icon>
+        </div>
+        <div>
+          <mat-icon class="mat-icon-update" (click)="update(o)">create</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

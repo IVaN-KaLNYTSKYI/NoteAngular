@@ -1,0 +1,62 @@
+.notes-box{
+  display: flex;
+}
+.notes-box-form{
+  width: 30%;
+  height: 100vh;
+  background: #aa2bee;
+}
+.notes-box-form form{
+  margin-top: 10px;
+  display: flex;
+}
+.notes-box-form form mat-icon{
+  cursor: pointer;
+  font-size: 50px;
+  color: #36d436;
+}
+.notes-input input {
+  width: 300px;
+  height: 30px;
+  margin: 5px 10px 0 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+}
+.notes-info-box{
+  width: 70%;
+  height: 100vh;
+  background: antiquewhite;
+}
+.notes-info{
+  padding: 20px;
+  width: 90%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin: 10px;
+}
+.mat-icon-delete{
+  width: 50px;
+  height: 50px;
+  color: red;
+  font-size: 50px;
+}
+.mat-icon-update{
+  width: 50px;
+  height: 50px;
+  color: green;
+  font-size: 50px;
+}
+.notes-btn{
+  width: 50%;
+  display: flex;
+}
+.notes-btn div{
+  margin-right: 10px;
+}
+.notes-text{
+  width: 50%;
+}

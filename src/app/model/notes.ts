@@ -1,4 +1,3 @@
 export class Notes{
-  name:string
-  surname:string
+  text:string
 }
